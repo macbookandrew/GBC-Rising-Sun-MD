@@ -29,10 +29,25 @@ module.exports = function (grunt) {
             src: 'style.min.css',
         }
     },
+    browserSync: {
+        dev: {
+            bsFiles: {
+                src : ['style.css', '**/*.php', '**/*.js', '!node_modules'],
+            },
+            options: {
+                watchTask: true,
+                proxy: "http://gbcrsmd.wordpress.dev",
+            },
+        },
+    },
   });
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', 'watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.registerTask('default', [
+        'browserSync',
+        'watch',
+    ]);
 };
