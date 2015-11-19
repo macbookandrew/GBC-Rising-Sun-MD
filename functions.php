@@ -20,4 +20,3 @@ add_filter( 'script_loader_src', 'script_loader_src_example' );
 add_filter( 'style_loader_src', 'script_loader_src_example' );
 
 include('functions-branding.php');
-include('functions-church.php');
