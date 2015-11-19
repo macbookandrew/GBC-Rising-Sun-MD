@@ -195,6 +195,8 @@ h6 {
     clear: both;
     font-family: $header-font-stack-main;
     line-height: 1.3;
+
+    .entry-thumbnail + & { clear: inherit; }
 }
 
 h1 {
