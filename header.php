@@ -37,6 +37,7 @@
                 <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
                 <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
             </a>
+            <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 
             <div id="navbar" class="navbar">
                 <nav id="site-navigation" class="navigation main-navigation" role="navigation">

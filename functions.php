@@ -20,3 +20,9 @@ add_filter( 'script_loader_src', 'script_loader_src_example' );
 add_filter( 'style_loader_src', 'script_loader_src_example' );
 
 include('functions-branding.php');
+
+// remove support for customizable header
+function remove_custom_header() {
+    remove_theme_support( 'custom-header' );
+}
+add_action( 'after_setup_theme', 'remove_custom_header', 12 );
