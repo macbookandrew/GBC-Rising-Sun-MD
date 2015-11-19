@@ -1044,6 +1044,14 @@ ul.nav-menu .focus > ul,
     width: 230px;
 }
 
+.nav-menu .children .page_item_has_children > a:after {
+    content: "\00a0\bb";
+    line-height: 1;
+    right: 10px;
+    font-size: 18px;
+    color: inherit;
+}
+
 
 /**
  * 5.0 Content
