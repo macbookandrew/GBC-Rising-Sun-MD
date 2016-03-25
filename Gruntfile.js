@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     browserSync: {
         dev: {
             bsFiles: {
-                src : ['style.css', '**/*.php', '**/*.js', '!node_modules'],
+                src : ['style.min.css', '**/*.php', '**/*.js', '!node_modules'],
             },
             options: {
                 watchTask: true,
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
     },
   });
 
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
