@@ -3,6 +3,8 @@
 function add_custom_css() {
     wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.min.css' );
     wp_dequeue_style( 'twentythirteen-style' );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Open+Sans+Condensed:700' );
+
 
     // fonts
     wp_dequeue_style( 'twentythirteen-fonts' );
@@ -12,13 +14,7 @@ function add_custom_css() {
 }
 add_action( 'wp_print_styles', 'add_custom_css' );
 
-// remove script and style version numbers
-function script_loader_src_example( $src ) {
-    return remove_query_arg( 'ver', $src );
-}
-add_filter( 'script_loader_src', 'script_loader_src_example' );
-add_filter( 'style_loader_src', 'script_loader_src_example' );
-
+// include branding
 include('functions-branding.php');
 
 // remove support for customizable header

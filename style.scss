@@ -91,9 +91,9 @@ $menu-hover-background:     #db572f; // menubar
 
 $required:                  #ed331c; // comment form
 
-$header-font-stack-main:      Bitter, Georgia, serif;
-$header-font-stack-secondary: "Source Sans Pro", Helvetica, sans-serif;
-$body-font-stack:             "Open Sans", Helvetica, sans-serif;
+$header-font-stack-main:      'Open Sans Condensed', 'Helvetica Neueu', Helvetica, sans-serif;
+$header-font-stack-secondary: $header-font-stack-main;
+$body-font-stack:             Lora, Georgia, serif;
 
 /**
  * 1.0 Reset
@@ -884,7 +884,7 @@ img.wp-smiley,
 }
 
 .site-description {
-    font: 300 italic 24px $header-font-stack-secondary;
+    font: 300 24px $header-font-stack-secondary;
     margin: 0;
 }
 
