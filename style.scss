@@ -837,6 +837,8 @@ img.wp-smiley,
     top: 40px;
     width: 100%;
     z-index: 1;
+
+    .archive & { top: 128px; }
 }
 
 .site-main .sidebar-inner {
@@ -2078,6 +2080,7 @@ footer.entry-meta {
 
 .archive-header {
     background-color: $copyright-background;
+    margin-bottom: 2em;
 }
 
 .archive-title,
