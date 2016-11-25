@@ -3,7 +3,7 @@
 function add_custom_css() {
     wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.min.css' );
     wp_dequeue_style( 'twentythirteen-style' );
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Open+Sans+Condensed:700' );
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' );
 
 
     // fonts

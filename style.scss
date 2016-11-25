@@ -91,9 +91,9 @@ $menu-hover-background:     #db572f; // menubar
 
 $required:                  #ed331c; // comment form
 
-$header-font-stack-main:      'Open Sans Condensed', 'Helvetica Neueu', Helvetica, sans-serif;
+$header-font-stack-main:      'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 $header-font-stack-secondary: $header-font-stack-main;
-$body-font-stack:             Lora, Georgia, serif;
+$body-font-stack:             $header-font-stack-main;
 
 /**
  * 1.0 Reset
@@ -1099,7 +1099,7 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-title {
-    font-weight: normal;
+    font-weight: 700;
     margin: 0 0 5px;
 }
 
