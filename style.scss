@@ -2104,6 +2104,30 @@ footer.entry-meta {
     padding-right: 316px;
 }
 
+.post-type-archive-wpfc_sermon {
+    .wpfc_sermon {
+        max-width: 1040px;
+        margin: 0 auto 1em;
+        padding: 0;
+
+        .entry-header,
+        .entry-content,
+        footer.entry-meta {
+            width: auto;
+            background-color: $light-tan;
+            margin: 0 326px 0 0;
+            padding: 1em;
+        }
+
+        .entry-header { margin-bottom: 0; }
+
+        .entry-title { font-size: 1.25em; }
+
+        .entry-content { padding-top: 0; }
+
+        &_image img { margin-left: 0 !important; }
+    }
+}
 
 /**
  * 5.10 Search Results/No posts
